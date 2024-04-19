@@ -15,4 +15,6 @@ fetch("https://randomuser.me/api/?results=5").then((data)=>{
     })
     console.log(tableData);
     document.getElementById("table_body").innerHTML=tableData;
+}).catch((err)=>{
+    console.log(err);
 })
